@@ -14,7 +14,7 @@
 
 - name: Create Homework Assignment project
   command: |
-    tower-cli project create --name homework --organization "{{org_name}}" --scm-type=git --scm-url="https://github.com/NicolaeCh/nextgen_ansible_advanced_homework.git"
+    tower-cli project create --name "00_Homework Assignment" --organization "{{org_name}}" --scm-type=git --scm-url="https://github.com/NicolaeCh/nextgen_ansible_advanced_homework.git"
 
 - name: Create Inventory
   command: |
