@@ -9,6 +9,7 @@
     backup: yes
 
 - name: enable repos
+    internal_repo: "http://www.opentlc.com/download/ansible_bootcamp/repo/internal.repo" 
  
-- name: install base tools and packages
+#- name: install base tools and packages
 
