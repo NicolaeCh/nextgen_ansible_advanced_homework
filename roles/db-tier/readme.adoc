@@ -1,0 +1,35 @@
+Role Name
+=========
+
+Install and configure the Postgres database. setup some database and users. 
+
+Requirements
+------------
+Run after base-config role
+
+Role Variables
+--------------
+
+The variable used are defined in group_vars in database_servers.yml - the database to configure (flask_db and books_store) and the user to enable (flask)
+Dependencies
+------------
+base-config role (in this repo).
+
+Example Playbook
+----------------
+- name: setup database tier
+  become: yes
+  hosts: appdbs
+  roles:
+    - {name: db-tier, tags: [dbs, postgres]}
+
+
+License
+-------
+
+BSD
+
+Author Information
+------------------
+
+An optional section for the role authors to include contact information, or a website (HTML is not allowed).
